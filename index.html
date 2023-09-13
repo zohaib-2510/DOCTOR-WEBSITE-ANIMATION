@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" integrity="sha512-AZtJoEn5SfSZimv10x5NMO2gaZCdoU8nxtHJK8O4SbKNlQeb1ggkvf0b0QixuuXIjX3Tp5jzBbTWajki81Vl2g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>  </title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+.b1{
+  display: flex;
+  align-items: center;
+justify-content: center;
+
+}
+.left {
+width: 70%;
+height: 100%;
+padding: 0% 0% 0% 4%;
+}
+.right{
+width: 30%;
+height: 100vh;
+} 
+ .imgh{
+  width: 100%;
+  height: 100%;
+}
+.container{
+  padding-left: 10%;
+  padding-bottom: 10%;
+}
+h1{
+  color: #76bc21;
+  font-size: 49px;
+  font-weight: 790;
+line-height: 1.5;
+}
+h2{
+  color: black;
+  font-size: 38px;
+  font-weight: 750;
+  line-height: 1.5;
+}
+.iu{
+  color: #76bc21;
+  font-size:41px;
+  font-weight: 775;
+}
+p{
+  color: black;
+  font-size: 15px;
+  font-weight: 650;
+line-height: 2.5;
+}
+.iuy{
+  font-size: 26px;
+  color: #76bc21;
+  font-weight: 720;
+  background-color: white;
+}
+#button{
+  width: 190px;
+  height: 60px;
+  background-color:#76bc21;
+  border: none;
+  border-radius: 15px;
+  font-size: 22px;
+  font-weight: 690;
+  cursor: pointer;
+color: white;
+transition: 1.7s;
+
+}
+#button:hover{
+  background-color: #84ef00;
+  
+}
+
+.imgh {
+            width:100%;
+            height:100%;
+            object-fit: cover;
+            animation: float 3s ease-out infinite;
+        }
+        @keyframes float {
+            50% {
+            transform: translate(0, 60px);
+            }
+        }
+        .shadow {
+            position: absolute;
+            height:20px;
+            top: 80%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.3);
+            filter: blur(3px);
+            animation: shrink 3s ease-out infinite;
+        }
+        @keyframes shrink {
+            0% {
+            width: 50%;
+            }
+            50% {
+            width: 30%;
+            }
+            100% {
+            width: 50%;
+            }
+        } 
+        @media(max-width:600px){
+            img{
+                width:300px;
+            }
+        }
+        #navlink{
+
+          color: #76bc21;
+          font-weight: 700;
+        }
+        #navlink:hover{
+
+          border-bottom: 2px solid #84ef00;
+        }
+        @media (max-width:1300px) {
+          .b1{
+            width: 100%;
+            height: 100vh;
+
+          }
+          .left{
+            width: 100%;
+height: 100vh;
+          }
+          .right{
+            width: 45%;
+
+          }
+          .left .imgh{
+            width: 100%;
+            height: 50vh;
+          }
+          .container{
+            padding-bottom: 25%;
+          }
+       .right p{
+            font: 50px;
+          }
+        .right h1{
+font-size: 100px;
+         }
+        .right h2{
+font-size: 80px;
+         }
+        }
+        @media (max-width:1200px) {
+          .b1{
+            width: 100%;
+            height: 100vh;
+
+          }
+          .left{
+            width: 100%;
+height: 100vh;
+          }
+          .right{
+            width: 100%;
+
+          }
+          .left .imgh{
+            width: 100%;
+            height: 50vh;
+          }
+          .container{
+            padding-bottom: 25%;
+          }
+          .left p{
+            font: 19px;
+          }
+        }
+        @media (max-width:1100px) {
+          .b1{
+            width: 100%;
+            height: 100vh;
+
+          }
+          .left{
+            width: 100%;
+height: 100vh;
+          }
+          .right{
+            width: 45%;
+
+          }
+          .left .imgh{
+            width: 100%;
+            height: 50vh;
+          }
+          .container{
+            padding-bottom: 25%;
+          }
+          .left p{
+            font: 19px;
+          }
+        }
+        @media (max-width:1000px) {
+          .b1{
+            width: 100%;
+            height: 100vh;
+
+          }
+          .left{
+            width: 100%;
+height: 100vh;
+          }
+          .right{
+            width: 45%;
+
+          }
+          .left .imgh{
+            width: 100%;
+            height: 50vh;
+          }
+          .container{
+            padding-bottom: 25%;
+          }
+          .left p{
+            font: 19px;
+          }
+        }
+        @media (max-width:950px) {
+          .b1{
+            flex-direction: column;
+
+          }
+          .left{
+            width: 100%;
+            height: auto;
+          }
+          .right{
+            width: 100%;
+            height: auto;
+          }
+          .left .imgh{
+            width: 100%;
+            height: auto;
+            padding-top: 34%;
+          }
+          .container{
+            width: 100%;
+            padding: 0%;
+          }
+         h1{
+            width: 100%;
+            font-size: 60px;
+          }
+         h2{
+            width: 100%;
+            font-size: 45px;
+          }
+         p{
+            width: 100%;
+            font-size: 32px;
+          }
+       #button{
+        width: 30%;
+        height: 60px;
+       }
+        }
+        @media (max-width:700px) {
+          .b1{
+            flex-direction: column;
+
+          }
+          .left{
+            width: 100%;
+            height: auto;
+          }
+          .right{
+            width: 100%;
+            height: auto;
+          }
+          .left .imgh{
+            width: 100%;
+            height: auto;
+            padding-top: 8%;
+          }
+          .container{
+            width: 100%;
+            padding: 0%;
+            padding-top: 5%;
+          }
+         h1{
+            width: 100%;
+            font-size: 60px;
+          }
+         h2{
+            width: 100%;
+            font-size: 45px;
+          }
+         p{
+          line-height: normal;
+            width: 100%;
+            font-size: 32px;
+          }
+       #button{
+        width: 50%;
+        height: 60px;
+       }
+        }
+        @media (max-width:600px) {
+          .b1{
+            flex-direction: column;
+
+          }
+          .left{
+            width: 100%;
+            height: auto;
+          }
+          .right{
+            width: 100%;
+            height: auto;
+          }
+          .left .imgh{
+            width: 100%;
+            height: auto;
+            padding-top: 8%;
+          }
+          .container{
+            width: 100%;
+            padding: 0%;
+            padding-top: 5%;
+          }
+         h1{
+            width: 100%;
+            font-size: 60px;
+          }
+          .img-fluid{
+            width: 55px;
+            height: 50px;
+          }
+         h2{
+            width: 100%;
+            font-size: 40px;
+          }
+         p{
+          line-height: normal;
+            width: 100%;
+            font-size: 32px;
+          }
+       #button{
+        width: 50%;
+        height: 60px;
+       }
+        }
+        @media (max-width:550px) {
+          .b1{
+            flex-direction: column;
+height: auto;
+          }
+          .left{
+            width: 100%;
+            height: auto;
+          }
+          .right{
+            width: 100%;
+            height: auto;
+          }
+          .left .imgh{
+            width: 100%;
+            height: auto;
+            padding-bottom: 20%;
+          }
+          .container{
+            width: 100%;
+            padding: 0%;
+            padding-top: 9%;
+            padding-left: 2.5%;
+          }
+         h1{
+            width: 100%;
+            font-size: 60px;
+          }
+         h2{
+            width: 100%;
+            font-size: 38px;
+          }
+         p{
+          line-height: normal;
+            width: 100%;
+            font-size: 32px;
+          }
+       #button{
+        width: 60%;
+        height: 60px;
+       }
+        }
+        @media (max-width:470px) {
+          .b1{
+            flex-direction: column;
+height: auto;
+          }
+          .left{
+            width: 100%;
+            height: auto;
+          }
+          .right{
+            width: 100%;
+            height: auto;
+          }
+          .left .imgh{
+            width: 100%;
+            height: auto;
+            padding-bottom: 20%;
+          }
+          .container{
+            width: 100%;
+            padding: 0%;
+            padding-top: 9%;
+            padding-left: 2.5%;
+          }
+         h1{
+            width: 100%;
+            font-size: 50px;
+          }
+         h2{
+            width: 100%;
+            font-size: 35px;
+          }
+         p{
+          line-height: normal;
+            width: 100%;
+            font-size: 28px;
+          }
+       #button{
+        width: 70%;
+        height: 60px;
+       }
+        }
+        @media (max-width:400px) {
+          .b1{
+            flex-direction: column;
+height: auto;
+          }
+          .left{
+            width: 100%;
+            height: auto;
+          }
+          .right{
+            width: 100%;
+            height: auto;
+          }
+          .left .imgh{
+            width: 100%;
+            height: auto;
+            padding-bottom: 20%;
+          }
+          .container{
+            width: 100%;
+            padding: 0%;
+            padding-top: 9%;
+            padding-left: 2.5%;
+          }
+         h1{
+            width: 100%;
+            font-size: 45px;
+          }
+         h2{
+            width: 100%;
+            font-size: 28px;
+          }
+         p{
+          line-height: normal;
+            width: 100%;
+            font-size: 23px;
+          }
+       #button{
+        width: 70%;
+        height: 60px;
+       }
+        }
+        @media (max-width:350px) {
+          .b1{
+            flex-direction: column;
+height: auto;
+          }
+          .left{
+            width: 100%;
+            height: auto;
+          }
+          .right{
+            width: 100%;
+            height: auto;
+          }
+          .left .imgh{
+            width: 100%;
+            height: auto;
+            padding-bottom: 20%;
+          }
+          .container{
+            width: 100%;
+            padding: 0%;
+            padding-top: 9%;
+            padding-left: 2.5%;
+          }
+         h1{
+            width: 100%;
+            font-size: 35px;
+          }
+         h2{
+            width: 100%;
+            font-size: 21px;
+          }
+         p{
+          line-height: normal;
+            width: 100%;
+            font-size: 16px;
+          }
+       #button{
+        width: 70%;
+        height: 60px;
+       }
+        }
+      
+    </style>
+</head>
+<body>
+    
+
+    <nav style="padding-left: 6%;" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="img-fluid" src="./pngaaa.com-2240689.png" width="70px" height="50px" alt="">D-CARE.</a>
+          <button style="color: black;"
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul style="padding-left: 3.8%;" class="navbar-nav">
+              <li class="nav-item">
+                <a id="navlink" class="nav-link active" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a id="navlink" class="nav-link active" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a id="navlink" class="nav-link active" href="#">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a id="navlink" class="nav-link active" href="#">DOCTORS</a>
+              </li>
+              <li class="nav-item">
+                <a id="navlink" class="nav-link active" href="#">REVIEWS</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+<div class="b1">
+  <div class="left">
+<img class="imgh" src="./Doctors-bro.png" alt="">
+  </div>
+  <div class="container">
+    <h1>STAY <span class="auto-type"></span> </h1>  
+    <h2>EXPERINCE <span class="iu">DOCTOR</span></h2>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, explicabo! adipisicing elit</p>
+    <button id="button">CONTACT <span class="iuy">NOW</span></button>
+   
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed(".auto-type",{
+      strings : ["SAFE", "HEALTHY"],
+      typeSpeed : 150,
+      backSpeed : 150,
+      looped : true
+    })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js" integrity="sha512-rXm6RiYDlz+aZC/ht75tGzeAmCg4gVfBA6Be5s5uENSahiXkgwEy10J2Cc+dxUAW4lRRQYbS5pugMOqBrs8ksw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
