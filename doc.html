@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>  </title>
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script:wght@400;500&family=Gochi+Hand&family=Great+Vibes&family=Handlee&family=Indie+Flower&family=Kaushan+Script&family=Lumanosimo&family=Molengo&family=Montserrat&family=Mooli&family=Staatliches&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -47,6 +48,46 @@ padding: 2%;    display: flex;
 justify-content: center;
 align-items: center;
 }
+h5{
+  font-stretch: 500%;
+  color: #84ef00;
+font-size: 30px;
+font-weight: 780;
+
+transition: 1.3s;
+}
+p{
+  width: 100%;
+  font-size: 20px;
+  color: black;
+  font-weight: 750;
+
+}
+#www{
+  font-weight: 780;
+  color: #76bc21;
+cursor: pointer;
+  font-size: 24.5px;
+  transition: 1.2s;
+}
+#www:hover{
+  color: #84ef00;
+
+}
+#btn{
+    background-color: #76bc21;
+    transition: 1.7s;
+    color: white;
+    font-size: 13px;
+}
+
+#btn:hover{
+margin-left: 20%;
+padding-left: 1.5%;
+text-align: center;
+  font-weight: 780;
+background-color: #84ef00;
+}
     </style>
 </head>
 <body>
@@ -75,7 +116,7 @@ align-items: center;
                 <a id="navlink" class="nav-link active" href="./about.html">ABOUT</a>
               </li>
               <li class="nav-item">
-                <a id="navlink" class="nav-link active" href="./doc.html">SERVICES</a>
+                <a id="navlink" class="nav-link active" href="./services.html">SERVICES</a>
               </li>
               <li class="nav-item">
                 <a style="border-bottom: 2px solid #84ef00;"  id="navlink" class="nav-link active" href="./doc.html">DOCTORS</a>
@@ -91,58 +132,39 @@ align-items: center;
 
       <div class="card-group">
         <div id="card" class="card">
-          <img id="img" src="kkkk.jpeg" class="card-img-top" alt="Hollywood Sign on The Hill"/>
-          <button type="button"
-            class="btn btn-primary"
-            data-toggle="modal"
-            data-target="#exampleModal">
-        Show image
-    </button>
+          <img id="img" id="exampleModal" data-toggle="modal"
+          data-target="#exampleModal"  src="kkkk.jpeg" class="card-img-top" alt="Hollywood Sign on The Hill"/>
+        
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">DR.AYESHA</h5>
             <p class="card-text">
-              This is a wider card with supporting text below as a natural lead-in to
-              additional content. This content is a little bit longer.
+            SPECIALIZED IN <span id="www">(SURGEON)</span>
             </p>
-            <p class="card-text">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </p>
+            <button type="button" id="btn" class="btn">REGISTERATION</button>
           </div>
         </div>
         <div id="card" class="card">
-          <img id="img" src="2d.jpg" class="card-img-top" alt="Palm Springs Road"/>
-          <button type="button"
-          class="btn btn-primary"
-          data-toggle="modal"
-          data-target="#exampleModal2">
-      Show image
-  </button>
+          <img id="img" id="exampleModal2" data-toggle="modal"data-target="#exampleModal2" id="img" src="./abc.jpeg" class="card-img-top" alt="Palm Springs Road"/>
+        
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <h5 class="card-title">DR.HUMERA</h5>
             <p class="card-text">
-              <small class="text-muted">Last updated 3 mins ago</small>
+             
+              SPECIALIZED IN <span id="www">(DENTIST)</span>
             </p>
+            <button type="button" id="btn" class="btn">REGISTERATION</button>
           </div>
         </div>
         <div id="card" class="card">
-          <img id="img" src="3d.avif" class="card-img-top" alt="Los Angeles Skyscrapers"/>
-          <button type="button"
-          class="btn btn-primary"
-          data-toggle="modal"
-          data-target="#exampleModal23">
-      Show image
-  </button>
+          <img id="img" src="./aco.jpg" id="exampleModal23" data-toggle="modal"data-target="#exampleModal23" class="card-img-top" alt="Los Angeles Skyscrapers"/>
+       
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">DR.MAHIRA</h5>
             <p class="card-text">
-              This is a wider card with supporting text below as a natural lead-in to
-              additional content. This card has even longer content than the first to show
-              that equal height action.
+             
+              SPECIALIZED IN <span id="www">(OPTOMETRIST)</span>
             </p>
-            <p class="card-text">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </p>
+            <button type="button" id="btn" class="btn">REGISTERATION</button>
           </div>
         </div>
       </div>
@@ -156,40 +178,32 @@ align-items: center;
 
  <div class="card-group">
         <div id="card" class="card">
-          <img id="img" src="4d.avif" class="card-img-top" alt="Hollywood Sign on The Hill"/>
+          <img id="img" src="./ano.jpg" id="exampleModal234" data-toggle="modal"data-target="#exampleModal234" class="card-img-top" alt="Hollywood Sign on The Hill"/>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">DR.ZOYA</h5>
             <p class="card-text">
-              This is a wider card with supporting text below as a natural lead-in to
-              additional content. This content is a little bit longer.
+             
+              SPECIALIZED IN <span id="www">(PEDIATRICIAN)</span>
             </p>
-            <p class="card-text">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </p>
+            <button type="button" id="btn" class="btn">REGISTERATION</button>
           </div>
         </div>
         <div id="card" class="card">
-          <img id="img" src="4d.jpg" class="card-img-top" alt="Palm Springs Road"/>
+          <img id="img"id="exampleModal2344" data-toggle="modal"data-target="#exampleModal2344" src="./aoho.jpg" class="card-img-top" alt="Palm Springs Road"/>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </p>
+            <h5 class="card-title">DR.INAYA</h5>
+            <p class="card-text"> SPECIALIZED IN <span id="www">(SR.SERGEON)</span></p>
+            <button type="button" id="btn" class="btn">REGISTERATION</button>
           </div>
         </div>
         <div id="card" class="card">
-          <img id="img" src="./6d.jpg" class="card-img-top" alt="Los Angeles Skyscrapers"/>
+          <img id="img" id="exampleModal23445" data-toggle="modal"data-target="#exampleModal23445" src="./ajoooooooooo.jpg" class="card-img-top" alt="Los Angeles Skyscrapers"/>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">DR.HANIYA</h5>
             <p class="card-text">
-              This is a wider card with supporting text below as a natural lead-in to
-              additional content. This card has even longer content than the first to show
-              that equal height action.
+              SPECIALIZED IN <span id="www">(SURGEON)</span>
             </p>
-            <p class="card-text">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </p>
+            <button type="button" id="btn" class="btn">REGISTERATION</button>
           </div>
         </div>
       </div>
@@ -254,7 +268,7 @@ align-items: center;
                 <div class="modal-body">
                     <img id="image"
                          src=
-"./2d.jpg"
+"./abc.jpeg"
                          alt="Click on button" />
                 </div>
  
@@ -275,7 +289,7 @@ align-items: center;
 
     <div class="modal fade"
          id="exampleModal23"
-         tabindex="-1"
+         tabindex="-1"  
          role="dialog"
          aria-labelledby="exampleModalLabel"
          aria-hidden="true">
@@ -286,7 +300,96 @@ align-items: center;
                 <div class="modal-body">
                     <img id="image"
                          src=
-"./3d.avif"
+"./aco.jpg"
+                         alt="Click on button" />
+                </div>
+ 
+                <div class="modal-footer">
+                    <button type="button"
+                            class="btn btn-secondary"
+                            data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="modal fade"
+         id="exampleModal234"
+         tabindex="-1"  
+         role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+ 
+                <!-- Add image inside the body of modal -->
+                <div class="modal-body">
+                    <img id="image"
+                         src=
+"./ano.jpg"
+                         alt="Click on button" />
+                </div>
+ 
+                <div class="modal-footer">
+                    <button type="button"
+                            class="btn btn-secondary"
+                            data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade"
+         id="exampleModal2344"
+         tabindex="-1"  
+         role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+ 
+                <!-- Add image inside the body of modal -->
+                <div class="modal-body">
+                    <img id="image"
+                         src=
+"./aoho.jpg"
+                         alt="Click on button" />
+                </div>
+ 
+                <div class="modal-footer">
+                    <button type="button"
+                            class="btn btn-secondary"
+                            data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade"
+         id="exampleModal23445"
+         tabindex="-1"  
+         role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+ 
+                <!-- Add image inside the body of modal -->
+                <div class="modal-body">
+                    <img id="image"
+                         src=
+"./ajoooooooooo.jpg"
                          alt="Click on button" />
                 </div>
  
