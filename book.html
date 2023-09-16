@@ -50,6 +50,52 @@ text-align: center;
     color: white;
     font-weight: 780;
 }
+#imgh {
+            width:100%;
+            height:100%;
+            object-fit: cover;
+            animation: float 3s ease-out infinite;
+        }
+        @keyframes float {
+            50% {
+            transform: translate(0, 60px);
+            }
+        }
+        .shadow {
+            position: absolute;
+            height:20px;
+            top: 80%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.3);
+            filter: blur(3px);
+            animation: shrink 3s ease-out infinite;
+        }
+        @keyframes shrink {
+            0% {
+            width: 50%;
+            }
+            50% {
+            width: 30%;
+            }
+            100% {
+            width: 50%;
+            }
+        } 
+        @media(max-width:600px){
+            #imgh{
+                width:450px;
+            }
+        }
+
+
+
+
+
+
+
+     
     </style>
 </head>
 <body>
@@ -57,7 +103,7 @@ text-align: center;
 
     <nav style="padding-left: 6%;" class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="img-fluid" src="./pngaaa.com-2240689.png" width="70px" height="20px" alt="">D-CARE.</a>
+          <a class="navbar-brand" href="#"><img class="img-fluid" id="imghh" src="./pngaaa.com-2240689.png" width="70px" height="50px" alt="">D-CARE.</a>
           <button style="color: black;"
             class="navbar-toggler"
             type="button"
@@ -112,7 +158,7 @@ text-align: center;
                             <div class="d-flex flex-row align-items-center mb-4">
                               <i style="color: #84ef00;" class="fas fa-user fa-lg me-3 fa-fw"></i>
                               <div class="form-outline flex-fill mb-0">
-                                <input type="text" id="form3Example1c" class="form-control" />
+                                <input type="text" id="form3Example1c" required class="form-control" />
                                 <label class="form-label" for="form3Example1c">Your Name</label>
                               </div>
                             </div>
@@ -120,7 +166,7 @@ text-align: center;
                             <div class="d-flex flex-row align-items-center mb-4">
                               <i style="color: #84ef00;"  class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                               <div class="form-outline flex-fill mb-0">
-                                <input type="email" id="form3Example3c" class="form-control" />
+                                <input type="email" id="form3Example3c" required class="form-control" />
                                 <label class="form-label" for="form3Example3c">Your Email</label>
                               </div>
                             </div>
@@ -128,7 +174,7 @@ text-align: center;
                             <div class="d-flex flex-row align-items-center mb-4">
                               <i style="color: #84ef00;"  class="fas fa-lock fa-lg me-3 fa-fw"></i>
                               <div class="form-outline flex-fill mb-0">
-                                <input type="password" id="form3Example4c" class="form-control" />
+                                <input type="password" id="form3Example4c" required class="form-control" />
                                 <label class="form-label" for="form3Example4c">Password</label>
                               </div>
                             </div>
@@ -137,20 +183,16 @@ text-align: center;
 
                               <i style="color: #84ef00; font-size: 1.8rem;" class="fa-lg me-3 fa-solid fa-person"></i>
                               <div class="form-outline flex-fill mb-0">
-                                <input type="age" id="form3Example4cd" class="form-control" />
+                                <input type="age" id="form3Example4cd" required class="form-control" />
                                 <label class="form-label" for="form3Example4cd">Enter Your Age</label>
                               </div>
                             </div>
           
-                            <div class="form-check d-flex justify-content-center mb-5">
-                              <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
-                              <label class="form-check-label" for="form2Example3">
-                                I agree all statements in <a href="#!">Terms of service</a>
-                              </label>
-                            </div>
+                            
           
                             <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                              <button id="btnn" type="button" class="btn btn-primary btn-lg">Register</button>
+                             <a type="button" id="btnn" type="button" class="btn btn-primary btn-lg" href="./index.html">REGISTRATION</a>
+                            
                             </div>
           
                           </form>
@@ -158,7 +200,7 @@ text-align: center;
                         </div>
                         <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
           
-                          <img src="./Doctors-pana.png"
+                          <img id="imgh" src="./Doctors-pana.png"
                             class="img-fluid" alt="Sample image">
           
                         </div>
@@ -200,7 +242,7 @@ text-align: center;
 var b = Math.floor(Math.random()*100)
 console.log(b);
 a.addEventListener('click',function(){
-alert("YOUR OPPOINMENT NUMBER IS"+b)
+alert("YOUR OPPOINMENT NUMBER IS"+" "+b)
 });
    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js" integrity="sha512-rXm6RiYDlz+aZC/ht75tGzeAmCg4gVfBA6Be5s5uENSahiXkgwEy10J2Cc+dxUAW4lRRQYbS5pugMOqBrs8ksw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
